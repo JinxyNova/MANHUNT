@@ -1,0 +1,19 @@
+name: Manhunt
+version: 1.0.0
+main: fr.merci.manhunt.ManhuntPlugin
+api-version: '26.1.2'
+authors: [Merci]
+description: Minecraft Manhunt - un coureur contre des chasseurs avec boussole traqueuse.
+commands:
+  manhunt:
+    description: Commande principale du Manhunt
+    usage: /<command> aide
+    aliases: [mh]
+    permission: manhunt.use
+permissions:
+  manhunt.use:
+    description: Voir l'aide, les options et le statut
+    default: true
+  manhunt.admin:
+    description: Gérer la partie et les options
+    default: op
